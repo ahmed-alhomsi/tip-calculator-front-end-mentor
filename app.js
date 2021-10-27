@@ -5,6 +5,7 @@ const totalNumber = document.querySelector('#total-number');
 const btns = document.querySelectorAll('.btn');
 const customIn = document.querySelector('#custom-tip');
 const infoDisplay = document.querySelector('.display-info');
+const resetBtn = document.querySelector('.reset');
 let tip;
 let total;
 
@@ -50,4 +51,8 @@ customIn.addEventListener('keyup', (e)=>{
     total = billIn.value + tip;
     tipAmount.textContent = tip;
     totalNumber.textContent = parseInt(billIn.value) + tip;
+});
+
+resetBtn.addEventListener('click', ()=>{
+    window.location.reload();
 });
