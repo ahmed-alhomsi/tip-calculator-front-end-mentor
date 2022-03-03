@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap');
 /*font-family: 'Space Mono', monospace;*/
-.attribution { margin-top: 5em; font-size: 11px; text-align: center; }
+.attribution { margin-top: 80px; font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
 /* ------------------------------------------------------------------------------------------------- */
 :root {
@@ -19,24 +19,24 @@
 
 h1 {
     color: var(--very-dark);
-    margin-top: 1em;
-    margin-bottom: 1em;
+    margin-top: 16px;
+    margin-bottom: 16px;
 }
 
 h2,h3 {
-    margin-top: 1.5em;
+    margin-top: 18px;
 }
 
 button {
     color: var(--white);
     background-color: var(--very-dark);
-    padding: .5em;
+    padding: 10px;
     border-radius: 5px;
     border: none;
     font-size: 15px;
     font-weight: bold;
-    width: 6em;
-    margin-top: 2em;
+    width: 94px;
+    margin-top: 32px;
 }
 
 button:hover {
@@ -66,8 +66,8 @@ body {
 
 .absolute {
     position: absolute;
-    top: 20%;
-    left: 75%;
+    top: 5px;
+    left: 225px;
 }
 
 .relative {
@@ -76,6 +76,7 @@ body {
 
 form input {
     font-size: 20px;
+    border-radius: 10px;
 }
 
 .flex {
@@ -90,42 +91,48 @@ form input {
 
 .input-box {
     background-color: var(--white);
-    padding: 2.5em;
-    padding-right: 20em;
+    padding: 42px;
+    padding-right: 350px;
     border-radius: 20px;
 }
 
 .output-box {
     border-radius: 20px;
-    margin-left: -20%;
-    width: 15em;
-    padding: 2em;
+    margin-left: -280px;
+    width: 250px;
+    padding: 32px;
     right: 0;
     background-color: var(--very-dark);
     color: var(--light-grayish);
 }
 
 .tips-form {
-    margin-top: 1em;
-    margin-bottom: 1em;
+    margin-top: 16px;
+    margin-bottom: 16px;
 }
 
 #custom-tip {
-    max-width: 4.5em;
-    padding: .1em;
+    max-width: 95px;
+    padding: 5px;
 }
 
 .reset {
     background-color: var(--light-grayish);
     color: var(--very-dark);
     width: 100%;
-    margin-top: 4em;
+    margin-top: 60px;
 }
 
 .error {
     background-color: rgb(228, 24, 24);
     color: var(--white);
     max-width: 30ch;
-    margin-top: 1em;
-    margin-bottom: 1em;
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+
+@media screen and (max-width: 700px) {
+    body {
+        margin-left: 500px;
+    }
 }
